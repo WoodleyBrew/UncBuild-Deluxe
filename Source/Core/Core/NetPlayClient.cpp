@@ -744,7 +744,7 @@ void NetPlayClient::ThreadFunc()
   if (SConfig::GetInstance().bQoSEnabled)
   {
     if (qos_success)
-      dialog->AppendChat("QoS was successfully enabled, for buffer divide your ping by 8 and round up (never go below 4 buffer)", false);
+      dialog->AppendChat("QoS was successfully enabled, for buffer divide your ping by 8 and round up (never go below 4 buffer!)", false);
     else
       dialog->AppendChat("QoS couldn't be enabled, other network activity might interfere with netplay", false);
   }
